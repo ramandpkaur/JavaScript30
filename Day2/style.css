@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-image: url('./background.jpg');
+  background-repeat: no-repeat;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+section {
+  border: 15px solid white;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 25vh auto;
+}
+.hand {
+  width: 5px;
+  height: 120px;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform-origin: 50% 100%;
+}
+.seconds-hand {
+  width: 3px;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(.4,2.08,.55,.44);
+}
+.hours-hand {
+  height: 90px;
+  width: 6px;
+}
